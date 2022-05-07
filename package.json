@@ -1,0 +1,39 @@
+{
+  "name": "@alheimsins/tibber-get-price-info",
+  "version": "1.0.0",
+  "description": "Retrieve price info from tibber for your current subscription",
+  "main": "index.js",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "standard && ava",
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alheimsins/tibber-get-price-info.git"
+  },
+  "keywords": [],
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alheimsins/tibber-get-price-info/issues"
+  },
+  "homepage": "https://github.com/Alheimsins/tibber-get-price-info#readme",
+  "engines": {
+    "node": ">=14.19.2"
+  },
+  "devDependencies": {
+    "ava": "4.2.0",
+    "standard": "17.0.0"
+  },
+  "dependencies": {
+    "axios": "0.27.2"
+  }
+}
