@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Alheimsins/tibber-get-price-info#readme",
   "engines": {
-    "node": ">=14.19.2"
+    "node": ">=16.15.0"
   },
   "devDependencies": {
     "ava": "4.2.0",
