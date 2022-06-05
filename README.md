@@ -23,6 +23,9 @@ If you have multiple homes registered on Tibber, you'll only get the price info 
 # Related
 
 - [calculate-cheapest-charging-schedule](https://github.com/Alheimsins/calculate-cheapest-charging-schedule) Simple module for calculating the cheapest charging schedule for your EV
+- [zaptec-go-start-stop](https://github.com/Alheimsins/zaptec-go-start-stop) A module for starting and stopping your Zaptec Go EV charger
+- [bmw-is-connected-to-charger](https://github.com/Alheimsins/bmw-is-connected-to-charger) Answers the question: is my BMW connected to a charger?
+- [leaf-connect](https://github.com/Alheimsins/leaf-connect) Node.js client library for the Nissan Leaf API
 
 # License
 
