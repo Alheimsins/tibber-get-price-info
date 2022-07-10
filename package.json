@@ -30,7 +30,7 @@
     "node": ">=16.15.1"
   },
   "devDependencies": {
-    "ava": "4.3.0",
+    "ava": "4.3.1",
     "standard": "17.0.0"
   },
   "dependencies": {
