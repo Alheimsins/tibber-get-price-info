@@ -16,9 +16,16 @@ const token = 'your-access-token'
 console.log(getPriceInfo(token)) //=> [{"total": 2.563, "energy": 2.0424, "tax": 0.5206,"startsAt": "2022-05-07T00:00:00.000+02:00"}]
 ```
 
-# Limitations
+If you have multiple homes, you can use the `homeId` option to specify which home to use. If you don't specify a homeId, the first home will be used.
 
-If you have multiple homes registered on Tibber, you'll only get the price info for the first home.
+```JavaScript
+
+import getPriceInfo from '@alheimsins/tibber-get-price-info'
+const token = 'your-access-token'
+const homeId = 'your-home-id-for-selected-home'
+
+console.log(getPriceInfo(token, homeId)) //=> [{"total": 2.563, "energy": 2.0424, "tax": 0.5206,"startsAt": "2022-05-07T00:00:00.000+02:00"}]
+```
 
 # Related
 

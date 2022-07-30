@@ -5,6 +5,7 @@ const API_ENDPOINT = 'https://api.tibber.com/v1-beta/gql'
 const gql = `{
   viewer {
     homes {
+      id,
       currentSubscription{
         priceInfo{
           today {
@@ -33,10 +34,11 @@ async function getData (token) {
   return data
 }
 
-async function getPriceInfo (token) {
+async function getPriceInfo (token, homeId) {
   try {
     const { data } = await getData(token)
-    const priceInfo = data.viewer.homes[0].currentSubscription.priceInfo
+    const home = homeId ? data.viewer.homes.find(h => h.id === homeId) : data.viewer.homes[0]
+    const priceInfo = home.currentSubscription.priceInfo
     return [...priceInfo.today, ...priceInfo.tomorrow]
   } catch (error) {
     console.error(error)
