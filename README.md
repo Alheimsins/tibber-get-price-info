@@ -13,7 +13,7 @@ You'll need an access token from [Tibber](https://developer.tibber.com/)
 import getPriceInfo from '@alheimsins/tibber-get-price-info'
 const token = 'your-access-token'
 
-console.log(getPriceInfo(token)) //=> [{"total": 2.563, "energy": 2.0424, "tax": 0.5206,"startsAt": "2022-05-07T00:00:00.000+02:00"}]
+console.log(await getPriceInfo(token)) //=> [{"total": 2.563, "energy": 2.0424, "tax": 0.5206,"startsAt": "2022-05-07T00:00:00.000+02:00"}]
 ```
 
 If you have multiple homes, you can use the `homeId` option to specify which home to use. If you don't specify a homeId, the first home will be used.
